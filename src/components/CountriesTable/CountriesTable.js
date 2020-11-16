@@ -21,7 +21,7 @@ const orderBy = (countries, value, direction) => {
 const SortArrow = ({ direction }) => {
   if (!direction) {
     return <></>;
-  }
+  };
 
   if (direction === "desc") {
     return (
