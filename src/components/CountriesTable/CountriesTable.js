@@ -40,23 +40,23 @@ const SortArrow = ({ direction }) => {
 
 const CountriesTable = ({ countries }) => {
   const [direction, setDirection] = useState();
-  const [value, setValue] = useState();
+  const [value, setValue] = useState()
 
-  const orderedCountries = orderBy(countries, value, direction);
+  const orderedCountries = orderBy(countries, value, direction)
 
   const switchDirection = () => {
     if (!direction) {
-      setDirection("desc");
+      setDirection("desc")
     } else if (direction === "desc") {
-      setDirection("asc");
+      setDirection("asc")
     } else {
-      setDirection(null);
+      setDirection(null)
     }
   };
 
   const setValueAndDirection = (value) => {
-    switchDirection();
-    setValue(value);
+    switchDirection()
+    setValue(value)
   };
 
   return (
@@ -123,4 +123,4 @@ const CountriesTable = ({ countries }) => {
   );
 };
 
-export default CountriesTable;
+export default CountriesTable
