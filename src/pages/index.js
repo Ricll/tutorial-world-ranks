@@ -9,6 +9,8 @@ export default function Home({ countries }) {
 
   const [keyword, setKeyword] = useState("");
 
+  console.log(keyword)
+
   const filteredCountries = countries.filter
   ((country) => 
   country.name.toLowerCase().includes(keyword) ||
